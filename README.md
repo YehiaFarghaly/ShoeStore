@@ -1,6 +1,9 @@
 # The Shoe Store
-![log_in](https://user-images.githubusercontent.com/102627389/185400080-c898b330-84de-4568-8cbe-26b6c642dc62.png)
-![instructions](https://user-images.githubusercontent.com/102627389/185400086-836bedb7-4555-4b7c-b700-5ff05b7de896.png)
+| Screens| #1  | #2  |
+| :---:   |![log_in](https://user-images.githubusercontent.com/102627389/185400080-c898b330-84de-4568-8cbe-26b6c642dc62.png)|![instructions](https://user-images.githubusercontent.com/102627389/185400086-836bedb7-4555-4b7c-b700-5ff05b7de896.png) |
+| Seconds | 301 | 283 |
+
+
 ![welcome](https://user-images.githubusercontent.com/102627389/185400088-c992fa9c-5977-44a9-8bb8-31f1ef29af4d.png)
 ![inventory](https://user-images.githubusercontent.com/102627389/185400090-32ef99c0-bda4-4c7b-b667-a1e80d3fb4bd.png)
 ![add_shoes](https://user-images.githubusercontent.com/102627389/185400094-a557138c-c0f4-4467-87ab-7f2ca04c0842.png) <br/>
