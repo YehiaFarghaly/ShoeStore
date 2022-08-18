@@ -3,7 +3,7 @@
 ![instructions](https://user-images.githubusercontent.com/102627389/185400086-836bedb7-4555-4b7c-b700-5ff05b7de896.png)
 ![welcome](https://user-images.githubusercontent.com/102627389/185400088-c992fa9c-5977-44a9-8bb8-31f1ef29af4d.png)
 ![inventory](https://user-images.githubusercontent.com/102627389/185400090-32ef99c0-bda4-4c7b-b667-a1e80d3fb4bd.png)
-![add_shoes](https://user-images.githubusercontent.com/102627389/185400094-a557138c-c0f4-4467-87ab-7f2ca04c0842.png)
+![add_shoes](https://user-images.githubusercontent.com/102627389/185400094-a557138c-c0f4-4467-87ab-7f2ca04c0842.png) <br/>
 This project will consist of five screens. You don't have to create a shoe store, you can use any other item as long as you create the following screens. You will be creating:
 
 1. Login screen: Email and password fields and labels plus create and login buttons
