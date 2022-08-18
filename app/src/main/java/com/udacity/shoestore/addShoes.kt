@@ -16,40 +16,17 @@ import com.udacity.shoestore.databinding.FragmentAddShoesBinding
 
 class addShoes : Fragment() {
     lateinit var binding: FragmentAddShoesBinding
-   val viewModel: shoeViewModel by activityViewModels()
+    var shoe = Shoe("",0,"","")
+   val viewModel: ShoeViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_add_shoes, container, false)
+        binding.shoeViewModel=viewModel
+        binding.shoe=shoe
         binding.cancelBtn.setOnClickListener { v: View ->
             backToList(v)
-        }
-        binding.addBtn.setOnClickListener { v: View ->
-            val cp_name=binding.companyName.text.toString()
-            val sh_name=binding.shoesName.text.toString()
-            val desc=binding.descText.text.toString()
-            val size_txt=binding.sizeTextView2.text.toString()
-            if (cp_name.length == 0 || sh_name.length == 0
-                || desc.length == 0 || size_txt.length == 0
-            ) {
-                Toast.makeText(
-                    activity!!.applicationContext,
-                    "Please fill all the information",
-                    Toast.LENGTH_LONG
-                ).show()
-            } else {
-                var shoe: Shoe = Shoe(
-                   sh_name,
-                    size_txt.toInt(),
-                    cp_name.toString(),
-                    desc.toString()
-                )
-                viewModel.addNewShoes(shoe)
-               backToList(v)
-                Toast.makeText(activity!!.applicationContext, "Shoes Added", Toast.LENGTH_SHORT)
-                    .show()
-            }
         }
         return binding.root
     }

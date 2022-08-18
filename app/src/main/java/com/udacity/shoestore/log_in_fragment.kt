@@ -25,7 +25,7 @@ lateinit var binding:FragmentLogInFragmentBinding
             var pass:String = binding.passText.text.toString()
             if(mail.length!=0 && pass.length!=0)
             Navigation.findNavController(v).navigate(R.id.action_log_in_fragment_to_welcome)
-        else Toast.makeText(activity!!.applicationContext,"Please Enter your mail and password", Toast.LENGTH_LONG).show()
+        else Toast.makeText(requireActivity().applicationContext,"Please Enter your mail and password", Toast.LENGTH_SHORT).show()
         }
        return binding.root
     }

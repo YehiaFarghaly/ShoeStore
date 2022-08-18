@@ -18,12 +18,11 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.databinding.FragmentShoesListBinding
 import com.udacity.shoestore.databinding.ShoesLayoutBinding
-import kotlinx.android.synthetic.main.shoes_layout.*
-import kotlinx.android.synthetic.main.shoes_layout.view.*
+
 
 class Shoes_List : Fragment() {
     lateinit var binding: FragmentShoesListBinding
-    val viewModel: shoeViewModel by activityViewModels()
+    val viewModel: ShoeViewModel by activityViewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         setHasOptionsMenu(true)
         super.onCreate(savedInstanceState)
@@ -45,7 +44,7 @@ class Shoes_List : Fragment() {
                     var layout = ShoesLayoutBinding.inflate(layoutInflater)
                     layout.cpTextView2.text=item.company
                     layout.nameTextView2.text=item.name
-                    layout.sizeTextView2.text=item.size.toString()
+                    layout.sizeTextView2.text=item.getSize()
                     layout.descText.text=item.description
                     myLayout.addView(layout.root)
                 }

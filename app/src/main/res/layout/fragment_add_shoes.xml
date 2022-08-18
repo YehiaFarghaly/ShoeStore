@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout-->
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="Shoe"
+            type="com.udacity.shoestore.Shoe" />
+         <variable
+             name="ShoeViewModel"
+             type="com.udacity.shoestore.ShoeViewModel" />
+    </data>
 <LinearLayout
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
@@ -8,6 +17,8 @@
     android:background="@color/gray"
     android:orientation="vertical"
     tools:context=".addShoes">
+
+
 
     <TextView
         android:id="@+id/textView4"
@@ -23,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:text="@={Shoe.company}"
         android:inputType="textPersonName"
         android:textColorHint="@color/colorAccent"
         android:textSize="20sp" />
@@ -40,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:text="@={Shoe.name}"
         android:inputType="textPersonName"
         android:textColorHint="@color/colorAccent"
         android:textSize="20sp" />
@@ -57,6 +70,7 @@
         android:layout_height="wrap_content"
         android:height="200sp"
         android:ems="10"
+        android:text="@={Shoe.description}"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:textColorHint="@color/colorAccent"
@@ -75,6 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:text="@={Shoe.size}"
         android:inputType="numberDecimal"
         android:textColorHint="@color/colorAccent"
         android:textSize="20sp" />
@@ -84,6 +99,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
+        android:onClick="@{() -> ShoeViewModel.addNewShoes(Shoe.name, Shoe.size, Shoe.company, Shoe.description)}"
         android:text="Add"
         android:textSize="20sp"
         android:textStyle="bold" />
