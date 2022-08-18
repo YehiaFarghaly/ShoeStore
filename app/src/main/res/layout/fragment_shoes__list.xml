@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ConstraintLayout -->
+<!-- ConstraintLayout To control the place of the floating action button I should use constraintLayout as LinearLayout would place the button below the scrollView-->
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">

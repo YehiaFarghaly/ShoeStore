@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- LinearLayout-->
+<!-- LinearLayout as the instruction page contains only some texts and imageViews above each others so vertical layout would be more than enough to handle that-->
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">

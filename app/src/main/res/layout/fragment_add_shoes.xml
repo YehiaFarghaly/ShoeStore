@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- LinearLayout-->
+<!-- LinearLayout because the design is simple just some textViews and editTexts and buttons above each others is enough to represent the screen-->
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <data>

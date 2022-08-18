@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ConstraintLayout -->
+<!-- ConstraintLayout was needed to place an imageView as background and input fields and button on the imageView , LinearLayout would not allow me to do that as the image would take the whole screen-->
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
